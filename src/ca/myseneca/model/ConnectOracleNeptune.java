@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 /**
+ * bbbb
  * This example shows Oracle "thin" driver to connect to neptune instance/service - the Oracle database on Zenit
  */
 public class ConnectOracleNeptune {
@@ -18,6 +19,7 @@ public class ConnectOracleNeptune {
             String thinDriverConnectDescriptorURL = "jdbc:oracle:thin:@//zenit.senecac.on.ca:1521/neptune" ;
 
             try {
+            	System.out.println("aaa");
                 Class.forName("oracle.jdbc.driver.OracleDriver");
                 connection = DriverManager.getConnection(thinDriverConnectDescriptorURL, "John", "password12");
                 String query = "SELECT * FROM departments WHERE department_id = 10";
